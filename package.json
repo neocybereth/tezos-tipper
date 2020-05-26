@@ -1,10 +1,20 @@
 {
   "name": "tezostipper",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "dist/app.js",
   "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/app.js"
+  },
   "dependencies": {
+    "@taquito/taquito": "^6.3.0-wallet.3",
+    "@types/mongoose": "^5.7.21",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.16",
     "snoostorm": "^1.3.0",
     "snoowrap": "^1.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
   }
 }
